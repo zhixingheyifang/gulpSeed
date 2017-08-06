@@ -1,6 +1,5 @@
 'use strict';
 /**
- * 1. LESS编译 压缩 合并
  * 2. JS合并 压缩 混淆
  * 3. img复制
  * 4. html压缩
@@ -26,7 +25,7 @@ gulp.task('style', function() {
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
-// 2. JS合并 压缩混淆
+// 2. JS合并 压缩的混淆 
 gulp.task('script', function() {
   gulp.src('src/scripts/*.js')
     .pipe(concat('all.js'))
