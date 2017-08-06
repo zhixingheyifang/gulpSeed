@@ -1,10 +1,3 @@
-/*
- * @Author: iceStone
- * @Date:   2016-01-27 10:21:56
- * @Last Modified by:   iceStone
- * @Last Modified time: 2016-01-27 11:08:35
- */
-
 'use strict';
 /**
  * 1. LESS编译 压缩 合并
@@ -77,8 +70,8 @@ gulp.task('serve', function() {
     console.log(bs.options.getIn(["urls", "local"]));
   });
 
-  gulp.watch('src/styles/*.less',['style']);
-  gulp.watch('src/scripts/*.js',['script']);
-  gulp.watch('src/images/*.*',['image']);
-  gulp.watch('src/*.html',['html']);
+  gulp.watch('src/styles/*.less', ['style']);
+  gulp.watch('src/scripts/*.js', ['script']);
+  gulp.watch('src/images/*.*', ['image']);
+  gulp.watch('src/*.html', ['html']);
 });
